@@ -5,7 +5,7 @@
         </div>
         <ul class="d-flex justify-content-between gap-2">
             <li class="text-uppercase"><a href="#">Characters</a></li>
-            <li class="text-uppercase active"><a href="#">Comics</a></li>
+            <li class="text-uppercase @if(request()->is('*comics')) {{'active'}}@endif"><a href="{{-- /comics --}}{{route('comics.index')}}">Comics</a></li>
             <li class="text-uppercase"><a href="#">Movies</a></li>
             <li class="text-uppercase"><a href="#">Tv</a></li>
             <li class="text-uppercase"><a href="#">Games</a></li>

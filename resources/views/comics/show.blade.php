@@ -6,7 +6,7 @@
         <img src="{{$comic['thumb']}}" alt="">
     </div>
 </div>
-<div class="comicInfo container my-5 text-primary">
+<div class="comicInfo container my-5 text-primary position-relative">
     <h2>{{$comic['title']}}</h2>
     <div class="row priceInfo border-2 border">
         <div class="col-8 py-3 ps-4">
@@ -17,11 +17,16 @@
         </div>
     </div>
     <p class="text-black mt-2">{{$comic["description"]}}</p>
-</div>
-<div class="comicDetails py-4 position-relative">
-    <div class="edit-comic">
-        <a href="#"><button class="btn btn-primary">Edit Comic</button></a>
+    <div class="edit-comic d-flex gap-2">
+        <a href="{{route('comics.edit', $comic)}}"><button class="btn btn-primary">Edit Comic</button></a>
+        <form action="{{route('comics.destroy', $comic)}}" method="POST">
+            @csrf
+            @method('DELETE')
+            <button type="submit" class="btn btn-danger">Delete</button>
+        </form>
     </div>
+</div>
+<div class="comicDetails py-4">
     <div class="container">
         <div class="row mb-4">
             <div class="col-12 col-lg-6">

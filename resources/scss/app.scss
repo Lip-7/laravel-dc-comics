@@ -209,3 +209,23 @@ footer{
     top: 0px;
     right: 15px;
 }
+.ToDisappear{
+    animation: disappear 5s linear ;
+    animation-fill-mode: forwards;
+}
+
+@keyframes disappear {
+    0%,100% {
+        opacity: 0;
+    }
+    10% {
+        opacity: 1;
+    }
+    90%{
+        transform: rotateX(0deg);
+    }
+    99%{
+        transform: rotateX(90deg);
+    }
+
+}

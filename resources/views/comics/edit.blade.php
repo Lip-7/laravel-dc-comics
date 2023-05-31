@@ -77,7 +77,7 @@
                     <div class="col-12 col-lg-6">
                         <div class="mb-3">
                             <label for="artists" class="form-label text-capitalize">artists</label>
-                            <input artists="text" value="{{old('artists', $comic->artists)}}" name="artists" placeholder="Insert here comic's artists" class="form-control @error('artists') is-invalid @enderror" id="artists" aria-describedby="artistsHelp" required>
+                            <input artists="text" value="{{old('artists', $comic->artists)}}" name="artists" placeholder="es. 'Chugong, Enchiro Oda, ecc..'" class="form-control @error('artists') is-invalid @enderror" id="artists" aria-describedby="artistsHelp" required>
                             @error('artists')
                                 <div class="invalid-feedback">
                                     {{ $message }}
@@ -88,7 +88,7 @@
                     <div class="col-12 col-lg-6">
                         <div class="mb-3">
                             <label for="writers" class="form-label text-capitalize">writers</label>
-                            <input writers="text" value="{{old('writers', $comic->writers)}}" name="writers" placeholder="Insert here comic's writers" class="form-control @error('writers') is-invalid @enderror" id="writers" aria-describedby="writersHelp" required>
+                            <input writers="text" value="{{old('writers', $comic->writers)}}" name="writers" placeholder="es. 'Chugong, Enchiro Oda, ecc..'" class="form-control @error('writers') is-invalid @enderror" id="writers" aria-describedby="writersHelp" required>
                             @error('writers')
                                 <div class="invalid-feedback">
                                     {{ $message }}

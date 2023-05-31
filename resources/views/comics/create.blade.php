@@ -79,7 +79,7 @@
                     <div class="col-12 col-lg-6">
                         <div class="mb-3">
                             <label for="artists" class="form-label text-capitalize">artists</label>
-                            <input artists="text" name="artists" placeholder="Insert here comic's artists"
+                            <input artists="text" name="artists" placeholder="es. 'Chugong, Enchiro Oda, ecc..'"
                                 class="form-control @error('artists') is-invalid @enderror" value="{{old('artists')}}" id="artists" aria-describedby="artistsHelp" required>
                                 @error('artists')
                                 <div class="invalid-feedback">
@@ -91,7 +91,7 @@
                     <div class="col-12 col-lg-6">
                         <div class="mb-3">
                             <label for="writers" class="form-label text-capitalize">writers</label>
-                            <input writers="text" name="writers" placeholder="Insert here comic's writers"
+                            <input writers="text" name="writers" placeholder="es. 'Chugong, Enchiro Oda, ecc..'"
                                 class="form-control @error('writers') is-invalid @enderror" value="{{old('writers')}}" id="writers" aria-describedby="writersHelp" required>
                                 @error('writers')
                                 <div class="invalid-feedback">

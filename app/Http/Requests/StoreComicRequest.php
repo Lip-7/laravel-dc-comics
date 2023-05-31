@@ -35,6 +35,7 @@ class StoreComicRequest extends FormRequest
     }
     public function messages() {
         return [
+            //fatte in inglese perchè il sito era full eng, e pareva brutto, chiesto a Samuel il permesso :)
             'title.required' => "The comic's title is required!",
             'title.min' => "The comic's title must be at least :min characters long!",
             'title.max' => "The comic's title must not exceed :max characters!",

@@ -10,7 +10,7 @@
     <h2>{{$comic['title']}}</h2>
     <div class="row priceInfo border-2 border">
         <div class="col-8 py-3 ps-4">
-            <h6 class="mb-0">U.S. Price: <span class="text-white">$19.99</span></h6>
+            <h6 class="mb-0">U.S. Price: <span class="text-white">{{$comic->price}}</span></h6>
         </div>
         <div class="col-4 py-3 ps-4 text-white">
             Check Availability
